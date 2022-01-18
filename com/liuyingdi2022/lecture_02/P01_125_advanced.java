@@ -1,10 +1,6 @@
 package com.liuyingdi2022.lecture_02;
 
-/**
- * 技巧：自顶向下的编程方式
- */
-public class P01_125 {
-
+public class P01_125_advanced {
     public static void main(String[] args) {
         System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
         System.out.println(isPalindrome("race a car"));
