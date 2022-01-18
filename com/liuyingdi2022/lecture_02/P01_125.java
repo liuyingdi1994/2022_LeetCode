@@ -23,5 +23,4 @@ public class P01_125 {
     private static String _reverse(String filterString) {
         return new StringBuilder(filterString).reverse().toString();
     }
-
 }
