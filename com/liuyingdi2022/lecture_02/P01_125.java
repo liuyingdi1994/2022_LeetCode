@@ -11,8 +11,17 @@ public class P01_125 {
     }
 
     public static boolean isPalindrome(String s) {
-        String filterString = s.replaceAll("[^A-Za-z0-9]", "");
-        String reverseString = new StringBuilder(filterString).reverse().toString();
+        String filterString = _filter(s);
+        String reverseString = _reverse(filterString);
         return filterString.equalsIgnoreCase(reverseString);
     }
+
+    private static String _filter(String s) {
+        return s.replaceAll("[^A-Za-z0-9]", "");
+    }
+
+    private static String _reverse(String filterString) {
+        return new StringBuilder(filterString).reverse().toString();
+    }
+
 }
